@@ -1,0 +1,98 @@
+.servicio-footer{
+    width: 100%;
+    padding-top: clamp(.5rem, 5vw, 5rem);
+    padding-bottom: clamp(.5rem, 5vw, 5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-servicio{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicio-title{
+    width: 100%;
+    text-align: left;
+    padding-bottom: clamp(.5rem, 2vw, 2rem);
+}
+.servicio-title h2{
+    font-size: clamp(1.3rem, 2.5vw, 2.5rem);
+    text-transform: uppercase;
+}
+.container-servicio .title-end{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container-servicio .title-end .title-end-top{
+    flex: 1 1 15rem;
+}
+.container-servicio .title-end .container-box{
+    flex: 1 1 30rem;
+}
+.container-servicio .title-end .title-end-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+.container-servicio .title-end .title-end-top p{
+    font-size: clamp(1rem, 1vw, 1rem);
+    font-family: "Montserrat", sans-serif;
+    color: rgb(119, 119, 119);
+}
+.container-servicio .title-end .title-end-top .button-servicios{
+    background: #2e69b2;
+    color: white;
+    font-size: clamp(.7rem, 1vw, 1rem);
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container-servicio .title-end .container-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.container-servicio .title-end .box-servicio{
+    flex: 1 1 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .3rem;
+    padding: 1.5rem 2rem;
+    border: 1px solid rgb(206, 204, 204);
+    transition: all .4s ease;
+    overflow: hidden;
+    position: relative;
+}
+.container-servicio .title-end .box-servicio a{
+    height: 50px;
+    width: 50px;
+    transition: all 500ms ease;
+}
+.container-servicio .title-end .box-servicio a svg{
+    fill: #2e69b2;
+    height: 50px;
+    width: 50px;
+}
+.container-servicio .title-end .box-servicio h6{
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "Saira", sans-serif;
+    text-transform: capitalize;
+}
+.container-servicio .title-end .box-servicio p{
+    font-family: "Montserrat", sans-serif;
+    font-size: .9rem;
+    color: rgb(110, 110, 110);
+}
+

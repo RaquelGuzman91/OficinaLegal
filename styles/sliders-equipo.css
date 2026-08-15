@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Gruppo&family=Hurricane&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mrs+Saint+Delafield&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+font-family: "Open Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Saira", sans-serif;
+ font-family: "Italianno", cursive;
+ font-family: "Dancing Script", cursive;
+ font-family: "Montserrat", sans-serif;
+ font-family: "Gruppo", sans-serif;
+ font-family: "Great Vibes", cursive;
+ font-family: "Mrs Saint Delafield", cursive;
+  font-family: "Playfair Display", serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --titulos--: #1995d4;
+    --enlaces--: #1796d0;
+    --banner-title--: #2e69b2;
+    --banner: #224b81;
+}
+html{
+    overflow-x: hidden;
+}
+
+
+/*-----------------*/
+.banner-bufet{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-top: clamp(.5rem, 4vw, 4rem);
+    padding-bottom: clamp(.5rem, 15vw, 15rem);
+
+}
+.banner-bufet .bufet-titles{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+}
+.banner-bufet .container-logo{
+    width: 130px;
+}
+.banner-bufet .container-logo img{
+    width: 100%;
+    height: 100%;
+}
+.bufet-titles h5{
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1rem, 2.7vw, 2.7rem);
+}
+.bufet-titles p{
+    width: 75%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(146, 146, 146);
+}
+/*-------*/
+.bufet-carousel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.splide{
+    width: 60%;
+}
+.splide__track{
+    width: 100%;
+}
+.splide__list{
+    width: 100%;
+}
+.splide__slide{
+    width: 100%;
+    height: 350px;
+}
+.splide__slide img{
+    width: 100%;
+    height: 100%;
+}
+

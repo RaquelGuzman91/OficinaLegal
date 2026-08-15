@@ -1,0 +1,29 @@
+/*----EFECTOS----*/
+.effect{
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all .8s ease-out;
+}
+
+.effect.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+/*segun direccion*/
+.desde-izquierda{
+    transform: translateX(-50px);
+}
+.desde-derecha{
+    transform: translateX(50px);
+}
+.desde-arriba{
+    transform: translateY(-50px);
+}
+.desde-abajo{
+    transform: translateY(50px);
+}
+/*visible*/
+.visible{
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}

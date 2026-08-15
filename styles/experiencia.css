@@ -1,0 +1,165 @@
+.experiencia{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: clamp(.5rem, 12vw, 12rem);
+}
+.experiencia .main-experiencia{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.experiencia .main-experiencia .experiencia-img h5{
+    font-size: clamp(1rem, 2vw, 2rem);
+    text-transform: uppercase;
+    color: black;
+    font-family: "Saira", sans-serif;
+    width: 85%;
+    font-weight: 600;
+}
+.experiencia .main-experiencia .experiencia-img{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(.5rem, 2vw, 2rem);
+}
+ .title-exper-img img{
+    width: 100%;
+    height: 100%;
+}
+.experiencia .main-experiencia .experiencia-img .check{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: clamp(.5rem, 2vw , 2rem);
+}
+.experiencia .main-experiencia .experiencia-img .check .title-exper-img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover; 
+}
+.experiencia .main-experiencia .experiencia-img .check .container-check{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem 0px;
+    gap: clamp(.5rem, 1vw, 1rem);
+}
+.experiencia .main-experiencia .experiencia-img .check .title-exper{
+    display: flex;
+}
+.experiencia .main-experiencia .experiencia-img .check .title-exper i{
+    display: flex;
+    font-size: 1.5rem;
+    color: #224b81  ;
+}
+.experiencia .main-experiencia .experiencia-img .check .title-exper p{
+    font-size: .95rem;
+    font-family: "Montserrat", sans-serif;
+}
+.experiencia .main-experiencia .experiencia-img .check .button-check{
+    background: #2e69b2;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid #2e69b2;
+    cursor: pointer;
+}
+.experiencia .main-experiencia .experiencia-img .check .button-check:hover{
+    background: #1796d0;
+    border: 1px solid #1796d0;
+}
+.experiencia .main-experiencia .experiencia-img .numers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 1rem .5rem;
+    border-top: 1px solid rgba(105, 105, 105, 0.322);
+}
+.experiencia .main-experiencia .experiencia-img .numers .num{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+}
+.experiencia .main-experiencia .experiencia-img .numers .num h5{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(116, 116, 116);
+}
+.experiencia .main-experiencia .experiencia-img .numers .num span{
+    color: #2e69b2;
+}
+.experiencia .main-experiencia .experiencia-img .numers p{
+    font-size: .9rem;
+    font-family: "Saira", sans-serif;
+
+}
+/*----*/
+.experiencia .main-experiencia .experiencia-title{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: clamp(.5rem, 6vw, 6rem);
+}
+.experiencia .main-experiencia .experiencia-title img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*-----*/
+
+
+
+@media(max-width: 1207px){
+    .experiencia .main-experiencia{
+    width: 95%;
+}
+}
+
+@media(max-width: 925px){
+    .experiencia .main-experiencia .experiencia-img .check{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+.experiencia .main-experiencia .experiencia-img .check .title-exper-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+}
+
+
+@media(max-width: 713px){
+    .experiencia .main-experiencia{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.experiencia .main-experiencia .experiencia-title{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    padding-top: clamp(.5rem, 6vw, 6rem);
+}
+}

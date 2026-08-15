@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Gruppo&family=Hurricane&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mrs+Saint+Delafield&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+font-family: "Open Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Saira", sans-serif;
+ font-family: "Italianno", cursive;
+ font-family: "Dancing Script", cursive;
+ font-family: "Montserrat", sans-serif;
+ font-family: "Gruppo", sans-serif;
+ font-family: "Great Vibes", cursive;
+ font-family: "Mrs Saint Delafield", cursive;
+  font-family: "Playfair Display", serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --titulos--: #1995d4;
+    --enlaces--: #1796d0;
+    --banner-title--: #2e69b2;
+    --banner: #224b81;
+}
+html{
+    overflow-x: hidden;
+}
+
+.banner-servicio{
+    width: 100%;
+    height: clamp(30vh, 65vh, 65vh);
+    background-image: url('../img/banner-servicio.jpg');
+    background-position: bottom;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+.banner-servicio .title-servicio{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding-bottom: 3rem;
+    padding-left: clamp(.5rem, 7vw, 7rem);
+    gap: 1.5rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+    background: #19375fb4;
+}
+
+.banner-servicio .title-servicio h1{
+    font-size: 1.2rem;
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.banner-servicio .title-servicio span{
+    font-weight: 700;
+}
+.banner-servicio .title-servicio p{
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1rem, 3vw, 3rem);
+    font-weight: 700;
+}
+.button-servicio{
+    background: #2e69b2;
+    color: white;
+    padding: .8rem 2rem;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+}
+.button-servicio:hover{
+    background: #1796d0;
+}
+/*servicios-box*/
+.servicios{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(.5rem, 5vw, 5rem);
+    background: #f2f7fd;
+}
+.servicios .container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.servicios .container .serviciosInfo{
+    text-align: center;
+}
+.servicios .container .serviciosInfo h2{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(.9rem, 1.3vw, 1.3rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(88, 88, 88);
+}
+.servicios .container .servicios-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.servicios .container .servicios-box .cardInfo{
+    flex: 1 1 27rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid rgb(212, 212, 212);
+    background: white;
+
+}
+.servicios .container .servicios-box .cardInfo i{
+    color: #2e69b2;
+    font-size: 2rem;
+}
+.servicios .container .servicios-box .cardInfo .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1.2rem;
+}
+.servicios .container .servicios-box .cardInfo .info h3{
+    color: black;
+    font-size: 1.4rem;
+    font-family: "Saira", sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.servicios .container .servicios-box .cardInfo .info ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .7rem;
+}
+.servicios .container .servicios-box .cardInfo .info ul li{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+.servicios .container .servicios-box .cardInfo .info ul li i{
+    font-size: 1rem;
+}
+.servicios .container .servicios-box .cardInfo .info ul li h4{
+    font-size: clamp(.7rem, 1.7vw, 1rem);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    color: rgb(110, 110, 110);
+}
+
+/*---------------------*/
+.servicio-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: clamp(.5rem, 1vw, 1rem);
+    padding-bottom: clamp(.5rem, 6vw, 6rem);
+}
+.servicio-footer .container-servicio{
+    width: 95%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+.servicio-footer .container-servicio .box-servicio{
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .8rem;
+    padding: 2rem;
+    border: 1px solid rgb(206, 204, 204);
+    transition: all .4s ease;
+    overflow: hidden;
+    position: relative;
+}
+.servicio-footer .container-servicio .box-servicio::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 7px;
+    width: 0;
+    background: #2e69b2;
+    transition: width 0.4s ease;
+}
+.servicio-footer .container-servicio a{
+    height: 50px;
+    width: 50px;
+    transition: all 500ms ease;
+}
+.servicio-footer .container-servicio svg{
+    fill: #2e69b2;
+}
+.servicio-footer .container-servicio h6{
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Saira", sans-serif;
+    text-transform: capitalize;
+}
+.servicio-footer .container-servicio p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: rgb(110, 110, 110);
+}
+.servicio-footer .container-servicio .box-servicio:hover{
+    transform: scale(1.05);
+    box-shadow: 5px  5px 20px rgba(99, 99, 99, 0.4);
+}
+.servicio-footer .container-servicio .box-servicio:hover a{
+    height: 60px;
+    width: 60px;
+}
+
+.servicio-footer .container-servicio .box-servicio:hover::after{
+    width: 100%;
+}
+
+
+@media(max-width: 477px){
+    .banner-servicio .title-servicio{
+    width: 100%;
+}
+}
+@media(max-width: 1207px){
+    .servicios .container{
+    width: 100%;
+}
+}
+@media(max-width: 460px){
+    .servicio-footer .container-servicio{
+    width: 100%;
+}
+}

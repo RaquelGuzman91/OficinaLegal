@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Gruppo&family=Hurricane&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mrs+Saint+Delafield&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+font-family: "Open Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Saira", sans-serif;
+ font-family: "Italianno", cursive;
+ font-family: "Dancing Script", cursive;
+ font-family: "Montserrat", sans-serif;
+ font-family: "Gruppo", sans-serif;
+ font-family: "Great Vibes", cursive;
+ font-family: "Mrs Saint Delafield", cursive;
+  font-family: "Playfair Display", serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --titulos--: #1995d4;
+    --enlaces--: #1796d0;
+    --banner-title--: #2e69b2;
+    --banner: #224b81;
+}
+html{
+    overflow-x: hidden;
+}
+
+
+.index-contacto{
+    width: 100%;
+    height: clamp(30vh, 65vh, 65vh);
+    background-image: url('../img/banner-contacto.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.index-contacto .title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: clamp(1rem, 2.5vw, 2.5rem);
+    gap: 1rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+    background: #19375fb4;
+}
+
+.index-contacto .title h2{
+    font-size: clamp(1.7rem,3vw ,3rem);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.index-contacto .title p{
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(.8rem,1.8vw ,1.2rem);
+    font-weight: 300;
+    text-align: center;
+}
+.index-contacto .title .button-somos{
+    background: #2e69b2;
+    color: white;
+    padding: .8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+.index-contacto .title .button-somos:hover{
+    background: #1796d0;
+}
+
+/*-------------*/
+.contacto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*primer valor vetical*/ /*segundo valor horizontal*/
+    padding: clamp(.5rem, 6vw, 6rem) clamp(.5rem, 2vw, 2rem);
+}
+.contacto main{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.contacto main .texto-contacto,
+.contacto main .texto-mapa{
+    flex: 1 1 25rem;
+}
+.contacto main .texto-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 3rem;
+}
+.contacto main .texto-contacto h3{
+    font-size: .9rem;
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #1995d4;
+}
+.contacto main .texto-contacto h4{
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1.7rem, 2.7vw ,2.7rem);
+    font-weight: 800;
+    color: rgb(53, 53, 53);
+}
+.contacto main .texto-contacto p{
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(.9rem, 1.2vw ,1.2rem);
+    color: rgb(104, 104, 104);
+}
+.contacto main .texto-contacto ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+.contacto main .texto-contacto ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contacto main .texto-contacto ul li a{
+    color: #1796d0;
+    font-size: 1.2rem;
+    padding: .5rem .3rem;
+    border-radius: 5px;
+    border: 1px solid rgb(221, 220, 220);
+}
+.contacto main .texto-contacto ul li .contacto-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .5rem;
+}
+.contacto main .texto-contacto ul li .contacto-info h5{
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+    color: rgb(107, 107, 107);
+}
+.contacto main .texto-contacto ul li .contacto-info p{
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(.9rem, 1.2vw ,1.2rem);
+    font-weight: 500;
+}
+.contacto main .texto-contacto ul .li-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto main .texto-contacto ul .li-button .button-info{
+    font-size: 1rem;
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+    padding: .8rem 1.7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contacto main .texto-contacto ul .li-button .blue{
+    background: #2e69b2;
+    color: aliceblue;
+}
+.contacto main .texto-contacto ul .li-button .blue:hover{
+    background: #1796d0;
+}
+.contacto main .texto-contacto ul .li-button .border{
+    border: 1px solid rgb(221, 220, 220);
+    color: rgb(114, 114, 114);
+}
+.contacto main .texto-contacto ul .li-button .border:hover{
+    color: #1796d0;
+    border: 1px solid #1796d0;
+}
+
+.contacto main .map{
+    width: 100%;
+    height: 100vh;
+}
+.contacto main .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 977px){
+    .contacto main{
+    width: 100%;
+}
+}

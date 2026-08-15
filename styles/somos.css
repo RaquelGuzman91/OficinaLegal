@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Gruppo&family=Hurricane&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mrs+Saint+Delafield&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+font-family: "Open Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+font-family: "Saira", sans-serif;
+ font-family: "Italianno", cursive;
+ font-family: "Dancing Script", cursive;
+ font-family: "Montserrat", sans-serif;
+ font-family: "Gruppo", sans-serif;
+ font-family: "Great Vibes", cursive;
+ font-family: "Mrs Saint Delafield", cursive;
+  font-family: "Playfair Display", serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --titulos--: #1995d4;
+    --enlaces--: #1796d0;
+    --banner-title--: #2e69b2;
+    --banner: #224b81;
+}
+html{
+    overflow-x: hidden;
+}
+
+
+.banner-somos{
+    width: 100%;
+    height: clamp(30vh, 65vh, 65vh);
+    background-image: url('../img/banner-quienessomos.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+.banner-somos .title-somos{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding-left: clamp(.5rem, 7vw, 7rem);
+    gap: 2rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+    background: #19375fb4;
+    padding-bottom: 3rem;
+}
+
+.banner-somos .title-somos h2{
+    font-size: 1.2rem;
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+}
+.banner-somos .title-somos p{
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(1rem, 3vw, 3rem);
+    font-weight: 700;
+}
+.banner-somos .title-somos .button-somos{
+    background: #2e69b2;
+    color: white;
+    padding: .8rem 2rem;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+}
+.banner-somos .title-somos .button-somos:hover{
+    background: #1796d0;
+
+}
+/*---------*/
+.somos{
+    width: 100%;
+    padding: clamp(.5rem, 4vw, 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.somos figure{
+    max-width: 400px;
+}
+.somos figure img{
+    width: 100%;
+    height: 100%;
+}
+.somos .main-somos{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.somos .main-somos .somos-texto,
+.somos .main-somos .somos-img{
+    flex: 1 1 20rem;
+}
+.somos .main-somos .somos-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: clamp(.5rem, 2vw, 2rem);
+}
+.somos .main-somos .somos-texto h2{
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.7rem, 3vw, 3rem);
+    text-transform: uppercase;
+}
+.somos .main-somos .somos-texto p{
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(.9rem, 1.2vw, 1.2rem);
+    line-height: clamp(1.2rem, 1.7vw, 1.7rem);
+    color: rgb(102, 101, 101);
+}
+.somos .main-somos .somos-img img{
+    width: 100%;
+    height: 100%;
+}
+/*----*/
+.seccion-somos{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+}
+.seccion-somos .empresa-info,
+.seccion-somos .seccion-imagen{
+    flex: 1 1 20rem;
+}
+.seccion-somos .empresa-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: clamp(.5rem, 1vw, 1rem);
+}
+.seccion-somos .empresa-info h4{
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.7rem, 3vw, 3rem);
+    text-transform: uppercase;
+}
+.seccion-somos .empresa-info p{
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(.9rem, 1.2vw, 1.2rem);
+    line-height: clamp(1.2rem, 1.7vw, 1.7rem);
+    color: rgb(102, 101, 101);
+}
+.seccion-somos .seccion-imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+.somos .somos-title-end{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: clamp(.5rem, 3vw, 3rem) clamp(.5rem, 1vw, 1rem);
+}
+.somos .somos-title-end h2{
+    font-size: clamp(1.7rem, 3vw, 3rem);
+    text-transform: uppercase;
+}
+.somos .somos-title-end p{
+    font-size: clamp(.9rem, 1.2vw, 1.2rem);
+    font-family: "Montserrat", sans-serif;
+    color: rgb(102, 101, 101);
+}
+.somos .somos-info{
+    width: 90%;
+}
+.somos .somos-info .info-tarjetas .info-card p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+.somos .somos-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.somos .somos-info .info-tarjetas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.somos .somos-info .info-tarjetas .info-cad{
+    flex: 1 1 20rem;
+    gap: 1rem;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #e0e2e2;
+    text-align: start;
+    border-radius: 10px;
+}
+.somos .somos-info .info-tarjetas .info-cad h2{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    text-align: start;
+
+}
+.somos .somos-info .info-tarjetas .info-cad p{
+    font-size: .9rem;
+    text-align: start;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/*----------*/
+
+
+@media(max-width: 477px){
+    .banner-somos .title-somos{
+    width: 100%;
+}
+}
