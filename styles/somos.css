@@ -235,3 +235,9 @@ html{
     width: 100%;
 }
 }
+@media(max-width: 800px){
+    .banner-somos{
+    max-height: 40vh;
+    
+}
+}

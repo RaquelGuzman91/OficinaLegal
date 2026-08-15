@@ -330,9 +330,9 @@ body{
     gap: 1rem;
 }
 }
-@media(max-width:750px){
+@media(max-width:800px){
     .banner-index{
-    height: 85vh;/*-----*/
+    height: 40vh;/*-----*/
 }
     .banner-index .title{
     width: 60%;/*----------*/

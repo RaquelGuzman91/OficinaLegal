@@ -213,3 +213,12 @@ html{
     width: 100%;
 }
 }
+@media(max-width: 800px){
+    .index-contacto{
+    height: 40vh;
+}
+.contacto main .map{
+    width: 100%;
+    height: 65vh;
+}
+}

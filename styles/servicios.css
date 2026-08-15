@@ -253,6 +253,14 @@ html{
     width: 100%;
 }
 }
+
+/*----*/
+@media(max-width: 800px){
+    .banner-servicio{
+    height: 40vh;
+}
+}
+
 @media(max-width: 460px){
     .servicio-footer .container-servicio{
     width: 100%;
